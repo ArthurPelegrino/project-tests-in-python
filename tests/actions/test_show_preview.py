@@ -1,7 +1,7 @@
 from pro_filer.actions.main_actions import show_preview  # NOQA
 
 # import pytest
-import sys
+# import sys
 
 context = {"all_files": [], "all_dirs": []}
 correct_dict_return = (
@@ -36,7 +36,7 @@ def test_show_preview(capsys, empty_dict, correct_dict, more_than_five_dict):
     captured = capsys.readouterr()
     # print("COM STRIP", captured.out)
     # print("SEM STRIP", captured.out.strip())
-    sys.stdout.read()
+    # sys.stdout.read()
     assert captured.out.strip() == "Found 0 files and 0 directories"
 
     show_preview(correct_dict)

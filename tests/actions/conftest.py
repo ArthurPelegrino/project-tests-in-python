@@ -38,3 +38,21 @@ def more_than_five_dict():
 @pytest.fixture
 def empty_dict():
     return {"all_files": [], "all_dirs": []}
+
+
+@pytest.fixture
+def correct_path_name():
+    context = {"base_path": "/home/trybe/Downloads/Trybe_logo.png"}
+    return context
+
+
+@pytest.fixture
+def wrong_path_name():
+    context = {"base_path": "/home/trybe/????"}
+    return context
+
+
+@pytest.fixture
+def my_computer_patch():
+    context = {"base_path": "/home/arthur/Trybe/python/projetos"}
+    return context
