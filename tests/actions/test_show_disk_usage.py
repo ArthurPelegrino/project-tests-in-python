@@ -2,9 +2,9 @@ from pro_filer.actions.main_actions import show_disk_usage  # NOQA
 
 
 correct_result = (
-    "'/tmp/pytest-of-arthur/pytes...test_show_disk_usage0/teste.py':"
+    "'/tmp/pytest-of-runner/pytes...test_show_disk_usage0/teste.py':"
     "        5 (100%)\n"
-    "'/tmp/pytest-of-arthur/pytes...est_show_disk_usage0/teste2.py':"
+    "'/tmp/pytest-of-runner/pytes...est_show_disk_usage0/teste2.py':"
     "        0 (0%)\n"
     "Total size: 5"
 )
