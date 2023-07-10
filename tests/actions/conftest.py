@@ -56,3 +56,22 @@ def wrong_path_name():
 def my_computer_patch():
     context = {"base_path": "/home/arthur/Trybe/python/projetos"}
     return context
+
+
+@pytest.fixture
+def my_pc_path_file_list():
+    context = {
+        "all_files": [
+            # "src/app.py",
+            # "src/__init__.py",
+            "/home/arthur/Trybe/python/projetos",
+            # "/home/arthur/Arthur/react",
+        ]
+    }
+    return context
+
+
+@pytest.fixture
+def empty_file_list():
+    context = {"all_files": []}
+    return context
