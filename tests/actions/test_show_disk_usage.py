@@ -1,5 +1,4 @@
 from pro_filer.actions.main_actions import show_disk_usage  # NOQA
-from pro_filer.cli_helpers import _get_printable_file_path
 
 correct_result = (
     "'/home/arthur/Trybe/python/projetos':"
