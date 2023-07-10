@@ -10,11 +10,11 @@ correct_result = (
 )
 
 
-def test_show_disk_usage(capsys, tmp_path):
-    # show_disk_usage(empty_file_list)
+def test_show_disk_usage(capsys, tmp_path, empty_file_list):
+    show_disk_usage(empty_file_list)
 
-    # captured = capsys.readouterr()
-    # assert captured.out.strip() == "Total size: 0"
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "Total size: 0"
 
     # show_disk_usage(my_pc_path_file_list)
     # captured = capsys.readouterr()
