@@ -1,10 +1,5 @@
 from pro_filer.actions.main_actions import show_disk_usage  # NOQA
 
-correct_result = (
-    "'/home/arthur/Trybe/python/projetos':"
-    "                                  4096 (100%)\nTotal size: 4096"
-)
-
 
 correct_result = (
     "'/tmp/pytest-of-arthur/pytes...test_show_disk_usage0/teste.py':"
@@ -15,7 +10,7 @@ correct_result = (
 )
 
 
-def test_show_disk_usage(capsys, empty_file_list, tmp_path):
+def test_show_disk_usage(capsys, tmp_path):
     # show_disk_usage(empty_file_list)
 
     # captured = capsys.readouterr()
